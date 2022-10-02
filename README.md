@@ -7,8 +7,6 @@ Maximum score of 0.4873 on test-1 and 0.5051 on test-2 were achieved.
 
 # Table of contents
 
-- [IEEE2022-VOD-Submission](#ieee2022-vod-submission)
-- [Table of contents](#table-of-contents)
 - [Steps](#steps)
   - [Download this repo](#download-this-repo)
   - [Copying the data](#copying-the-data)
