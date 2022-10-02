@@ -1,0 +1,5 @@
+**/images/*
+**/labels/*
+detect
+**/submissions/*
+**/runs/train

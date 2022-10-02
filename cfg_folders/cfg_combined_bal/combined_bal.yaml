@@ -1,0 +1,24 @@
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+path: /usr/src/mydataset/cfg_folders/cfg_combined_bal
+train: /usr/src/mydataset/cfg_folders/cfg_combined_bal/train.txt
+val: /usr/src/mydataset/cfg_folders/cfg_combined_bal/test.txt
+test: /usr/src/mydataset/cfg_folders/cfg_combined_bal/test.txt
+
+# number of classes
+nc: 15
+
+# class names
+# synthetic dataset
+names: ['car_back', 'car_side', 'car_front', 
+'truck_back', 'truck_side', 'truck_front', 
+'motorcycle_back', 'motorcycle_side', 'motorcycle_front', 
+'cycle_back', 'cycle_side','cycle_front',
+'bus_back', 'bus_side', 'bus_front']
+
+# for vehicle orientation dataset
+# names: ['car_back', 'car_side', 'car_front', 
+# 'bus_back', 'bus_side', 'bus_front', 
+# 'truck_back', 'truck_side', 'truck_front',
+# "motorcycle_back", "motorcycle_side","motorcycle_front",
+# "bicycle_back",'bicycle_side','bicycle_front',]
+
