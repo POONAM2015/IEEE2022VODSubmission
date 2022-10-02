@@ -7,14 +7,18 @@ Maximum score of 0.4873 on test-1 and 0.5051 on test-2 were achieved.
 
 # Table of contents
 
-- [Steps](#Steps)
-    - [Download this repo](#Download-this-repo)
-    - [Copying the data](#Copying-the-data)
-        - [Training data](#training-data)
-        - [Validation data](#validation-data)
-        - [Test data](#test-data)
-    - [Training the model & Inference](#Training-the-model-&-Inference)
-    - [Performance on test datasets](#performance-on-test-datasets)
+- [IEEE2022-VOD-Submission](#ieee2022-vod-submission)
+- [Table of contents](#table-of-contents)
+- [Steps](#steps)
+  - [Download this repo](#download-this-repo)
+  - [Copying the data](#copying-the-data)
+    - [Training data](#training-data)
+    - [Validation data](#validation-data)
+    - [Test data](#test-data)
+  - [Training the model & Inference](#training-the-model--inference)
+    - [Creating and running Docker Image](#creating-and-running-docker-image)
+    - [Running the model for training and inference](#running-the-model-for-training-and-inference)
+  - [Performance on test datasets](#performance-on-test-datasets)
 - [References](#references)
 
 # Steps
@@ -48,7 +52,7 @@ nvidia-docker run --rm --name yolov7_vehicle_docker -p 6006:6006 --ipc=host -it 
 ```
 
 ### Running the model for training and inference
-Run `yolov7_vehicle/runs/work.ipynb`
+Run [yolov7_vehicle/runs/work.ipynb](yolov7_vehicle/runs/work.ipynb)
 
 ## Performance on test datasets
 ![Test Dataset Performance](performance_on_test_datasets.png)
