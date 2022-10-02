@@ -30,7 +30,7 @@ Copy training images (both train-1 and train-2 data) and their yolo labels to `m
 
 ### Validation data
 - [Vehicle Orientation Dataset](https://github.com/sekilab/VehicleOrientationDataset) has been used for validation.
-- Modify the labels of this dataset to suit as per Synthetic orientation dataset. You may use [validation_annotation.py](https://github.com/POONAM2015/IEEE2022-VOD-Submission/blob/main/main_test/validation_annoation.py)
+- Modify the labels of this dataset to suit as per Synthetic orientation dataset. You may use [validation_annotation.py](https://github.com/POONAM2015/IEEE2022-VOD-Submission/blob/main/main_test/validation_annotation.py)
 - Copy validation images and their yolo labels to `main_test/images` and `main_test/labels` respectively.
 
 ### Test data
