@@ -1,5 +1,21 @@
 # IEEE2022-VOD-Submission
-The repository contains the source code for reproducing the results of my submission to vehicle orientation detection challenge of IEEE Big Data Cup 2022.
+The repository contains the source code and trained models for [Vehicle class and Orientation Detection Challenge 2022](https://vod2022.sekilab.global/overview/) that was held as part of IEEE Big Data Cup 2022.
+
+Maximum score of 0.4873 on test-1 and 0.5051 on test-2 were achieved.
+
+<p align="center"><img src="621.jpg" width="60%" height="auto"></p>
+
+# Table of contents
+
+- [Steps](#Steps)
+    - [Download this repo](#Download-this-repo)
+    - [Copying the data](#Copying-the-data)
+        - [Training data](#training-data)
+        - [Validation data](#validation-data)
+        - [Test data](#test-data)
+    - [Training the model & Inference](#Training-the-model-&-Inference)
+    - [Performance on test datasets](#performance-on-test-datasets)
+- [References](#references)
 
 # Steps
 ## Download this repo
@@ -12,6 +28,7 @@ Copy training images (both train-1 and train-2 data) and their yolo labels to `m
 
 ### Validation data
 - [Vehicle Orientation Dataset](https://github.com/sekilab/VehicleOrientationDataset) has been used for validation.
+- Modify the labels of this dataset to suit as per Synthetic orientation dataset. You may use [validation_annotation.py](https://github.com/POONAM2015/IEEE2022-VOD-Submission/blob/main/main_test/validation_annoation.py)
 - Copy validation images and their yolo labels to `main_test/images` and `main_test/labels` respectively.
 
 ### Test data
@@ -33,7 +50,9 @@ nvidia-docker run --rm --name yolov7_vehicle_docker -p 6006:6006 --ipc=host -it 
 ### Running the model for training and inference
 Run `yolov7_vehicle/runs/work.ipynb`
 
-## Performance 
+## Performance on test datasets
+![Test Dataset Performance](performance_on_test_datasets.png)
+
 
 
 

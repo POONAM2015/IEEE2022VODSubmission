@@ -256,3 +256,8 @@ if __name__ == '__main__':
     data_augmentation(opt.n_aug, opt.image_source, show_flag, seq_flag)
     end_time = time.perf_counter()
     print(f'Finished augmentation in {round(end_time - start_time, 2)} sec.')
+
+
+# follow this command to run
+# python data_aug.py --image_source images_list.txt --n_aug 2'
+# the augmented images will be saved in IEEE2022-VOD-Submission/augmented_dataset/AugData_images_list
